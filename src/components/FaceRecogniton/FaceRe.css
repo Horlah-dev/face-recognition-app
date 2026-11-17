@@ -1,0 +1,62 @@
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.face-image{
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.bounding-box {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 55%;
+    border: 3px solid #345bdb;
+    box-sizing: border-box;
+}
+.error-message {
+    color: #ff4d4d;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.scanning-line {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.scanning-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.scanning-beam {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #00D9ff;
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+    animation: scan 3s linear infinite;
+}
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}

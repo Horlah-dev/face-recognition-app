@@ -1,0 +1,21 @@
+.top{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.pag{
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.rank {
+    margin: 0;
+    color: #00d9ff;
+    font-size: 2rem;
+    font-weight: bold;
+}
