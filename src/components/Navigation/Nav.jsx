@@ -1,7 +1,9 @@
+import './Nav.css';
+
 function Navigation({ onSignOut }){
     return(
-        <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
-            <p className="f3 link dim black pa3 pointer"
+        <nav className='navBar'>
+            <p className='barss'
             onClick={onSignOut}
             >
                 Sign Out
