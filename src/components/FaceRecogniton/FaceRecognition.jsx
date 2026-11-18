@@ -49,7 +49,7 @@ function FaceRecognition({ imgUrl, error, onImageError, isScanning, onDetectionC
             console.log('Face detection returned:', result.face);
             setDetectedFaces(result.face);
                 if (result.face.length > 0) {
-                    const response = await fetch('http://localhost:3001/api/scan', {
+                    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/scan`, {
                         method: 'POST',
                         headers: {
                             Authorization: `Bearer ${token}`,
