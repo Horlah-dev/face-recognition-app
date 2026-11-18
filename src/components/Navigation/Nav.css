@@ -1,0 +1,15 @@
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+}
+.barss {
+  margin: 0;
+  padding: 1rem;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in;
+  font-size: 25px;
+}
+.barss:hover {
+  opacity: 0.5;
+}
