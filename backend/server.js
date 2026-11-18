@@ -26,7 +26,11 @@ function authenticateToken(req, res, next) {
     })
 } 
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: [
+    'http://localhost:5173',
+    'https://your-frontend-name.onrender.com',
+    ]
+    }));
 app.use(express.json());
 
 
