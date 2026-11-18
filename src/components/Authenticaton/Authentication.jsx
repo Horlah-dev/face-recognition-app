@@ -29,7 +29,7 @@ const handleSubmit = async (event) => {
 
     if (isSignIn) {
         try {
-            const response = await fetch('http://localhost:3001/api/login', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -52,7 +52,7 @@ const handleSubmit = async (event) => {
     } else {
         try{
             const response = await
-            fetch('http://localhost:3001/api/register', {
+            fetch(`${import.meta.env.VITE_API_URL}/api/register`, {
                 method: 'POST',
                 headers: { 'Content-type': 'application/json '},
                 body: JSON.stringify({
