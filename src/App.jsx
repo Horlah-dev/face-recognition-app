@@ -90,7 +90,7 @@ function App() {
 
         const loadProfile = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api/profile', {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/profile`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
