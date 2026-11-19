@@ -28,7 +28,7 @@ function authenticateToken(req, res, next) {
 
 app.use(cors({ origin: [
     'http://localhost:5173',
-    'https://face-recognition-app-1-yo8h.onrender.com/',
+    'https://face-recognition-app-1-yo8h.onrender.com',
     ]
     }));
 app.use(express.json());
