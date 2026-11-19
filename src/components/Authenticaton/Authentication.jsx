@@ -46,8 +46,9 @@ const handleSubmit = async (event) => {
             }
 
             onLogin(data.token, data.user);
-        } catch {
+        } catch (error) {
             setError('Could not connect to the backend. Please try again.');
+            console.error('Login error details:', error);
         }
     } else {
         try{
